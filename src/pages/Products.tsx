@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useSearchParams } from "react-router-dom";
 
 import copperPipesImg from "@/assets/copper-pipes.jpg";
 import milberryImg from "@/assets/milberry-copper.jpg";
@@ -73,21 +74,23 @@ const ProductCard = ({ name, desc, img, i }: {name: string;desc: string;img: str
   </motion.div>;
 
 
-const Products = () =>
+const Products = () => {
+  const [searchParams] = useSearchParams();
+  const defaultTab = searchParams.get("tab") === "aluminium" ? "aluminium" : "copper";
+
+  return (
 <Layout>
     <section className="bg-primary text-primary-foreground py-16">
       <div className="container mx-auto px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl">
           <h1 className="text-4xl font-bold mb-4">Our Products</h1>
-          <p className="text-lg opacity-85 font-sans">Comprehensive range of non ferrous scrap products for industrial recycling and manufacturing.
-
-        </p>
+          <p className="text-lg opacity-85 font-sans">Comprehensive range of non ferrous scrap products for industrial recycling and manufacturing.</p>
         </motion.div>
       </div>
     </section>
 
     <section className="container mx-auto px-4 py-16">
-      <Tabs defaultValue="copper" className="w-full">
+      <Tabs defaultValue={defaultTab} key={defaultTab} className="w-full">
         <TabsList className="mb-8 w-full justify-start">
           <TabsTrigger value="copper">Copper Scrap</TabsTrigger>
           <TabsTrigger value="aluminium">Aluminium Scrap</TabsTrigger>
@@ -110,7 +113,8 @@ const Products = () =>
         </TabsContent>
       </Tabs>
     </section>
-  </Layout>;
-
+  </Layout>
+  );
+};
 
 export default Products;
