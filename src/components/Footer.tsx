@@ -39,11 +39,12 @@ const Footer = () =>
         <div>
           <h4 className="font-semibold text-sm uppercase tracking-wider mb-3 opacity-70 font-sans">Products</h4>
           <ul className="space-y-2 text-sm opacity-80">
-            <li>Copper Pipes & Tubes</li>
-            <li>Milberry Copper</li>
-            <li>Birch Copper Scrap</li>
-            <li>Aluminium 6063</li>
-            <li>Aluminium TT Scrap</li>
+            <li>
+              <Link to="/products?tab=copper" className="hover:opacity-100 transition-opacity">Copper Scrap</Link>
+            </li>
+            <li>
+              <Link to="/products?tab=aluminium" className="hover:opacity-100 transition-opacity">Aluminium Scrap</Link>
+            </li>
           </ul>
         </div>
 
