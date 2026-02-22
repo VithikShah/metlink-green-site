@@ -12,53 +12,53 @@ import aluminiumTTImg from "@/assets/aluminium-tt.jpg";
 import aluminiumSheetsImg from "@/assets/aluminium-sheets.jpg";
 
 const copperProducts = [
-  {
-    name: "Copper Pipes & Tubes",
-    desc: "High-quality copper pipes and tubes used in plumbing, HVAC, refrigeration, and industrial fluid transfer applications. Available in various diameters and wall thicknesses.",
-    img: copperPipesImg,
-  },
-  {
-    name: "Milberry Copper (No. 1 Bright)",
-    desc: "Premium grade bare, bright, uncoated copper wire scrap — 99.9% pure. Ideal for direct melting and re-processing into high-grade copper products.",
-    img: milberryImg,
-  },
-  {
-    name: "Birch / Cliff (No. 1 Copper)",
-    desc: "Clean, uncoated, and unalloyed copper clippings, bus bars, and heavy scrap. Minimum 99% copper content, suitable for smelting and refining.",
-    img: birchImg,
-  },
-  {
-    name: "Cupro-Nickel Scrap",
-    desc: "Copper-nickel alloy scrap recovered from marine, desalination, and heat exchanger applications. Processed for maximum copper and nickel recovery.",
-    img: cuproNickelImg,
-  },
-];
+{
+  name: "Copper Pipes & Tubes",
+  desc: "High-quality copper pipes and tubes used in plumbing, HVAC, refrigeration, and industrial fluid transfer applications. Available in various diameters and wall thicknesses.",
+  img: copperPipesImg
+},
+{
+  name: "Milberry Copper (No. 1 Bright)",
+  desc: "Premium grade bare, bright, uncoated copper wire scrap — 99.9% pure. Ideal for direct melting and re-processing into high-grade copper products.",
+  img: milberryImg
+},
+{
+  name: "Birch / Cliff (No. 1 Copper)",
+  desc: "Clean, uncoated, and unalloyed copper clippings, bus bars, and heavy scrap. Minimum 99% copper content, suitable for smelting and refining.",
+  img: birchImg
+},
+{
+  name: "Cupro-Nickel Scrap",
+  desc: "Copper-nickel alloy scrap recovered from marine, desalination, and heat exchanger applications. Processed for maximum copper and nickel recovery.",
+  img: cuproNickelImg
+}];
+
 
 const alumProducts = [
-  {
-    name: "Aluminium 6063 Scrap",
-    desc: "Widely used aluminium alloy extrusion scrap from window frames, doors, and structural profiles. Excellent for re-melting into 6063 alloy ingots.",
-    img: aluminium6063Img,
-  },
-  {
-    name: "Aluminium Taint Tabor (TT)",
-    desc: "Mixed low-copper aluminium scrap consisting of castings, extrusions, and sheet. Clean and sorted for efficient recycling and alloy production.",
-    img: aluminiumTTImg,
-  },
-  {
-    name: "Aluminium Sheet Scrap",
-    desc: "Flat-rolled aluminium sheet offcuts and scrap from manufacturing, construction, and packaging industries. Sorted by alloy grade for quality recycling.",
-    img: aluminiumSheetsImg,
-  },
-];
+{
+  name: "Aluminium 6063 Scrap",
+  desc: "Widely used aluminium alloy extrusion scrap from window frames, doors, and structural profiles. Excellent for re-melting into 6063 alloy ingots.",
+  img: aluminium6063Img
+},
+{
+  name: "Aluminium Taint Tabor (TT)",
+  desc: "Mixed low-copper aluminium scrap consisting of castings, extrusions, and sheet. Clean and sorted for efficient recycling and alloy production.",
+  img: aluminiumTTImg
+},
+{
+  name: "Aluminium Sheet Scrap",
+  desc: "Flat-rolled aluminium sheet offcuts and scrap from manufacturing, construction, and packaging industries. Sorted by alloy grade for quality recycling.",
+  img: aluminiumSheetsImg
+}];
+
 
 const fade = {
   hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.4 } }),
+  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.4 } })
 };
 
-const ProductCard = ({ name, desc, img, i }: { name: string; desc: string; img: string; i: number }) => (
-  <motion.div custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fade}>
+const ProductCard = ({ name, desc, img, i }: {name: string;desc: string;img: string;i: number;}) =>
+<motion.div custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fade}>
     <Card className="h-full hover:shadow-md transition-shadow overflow-hidden">
       <CardContent className="p-0">
         <div className="aspect-square overflow-hidden">
@@ -70,18 +70,18 @@ const ProductCard = ({ name, desc, img, i }: { name: string; desc: string; img: 
         </div>
       </CardContent>
     </Card>
-  </motion.div>
-);
+  </motion.div>;
 
-const Products = () => (
-  <Layout>
+
+const Products = () =>
+<Layout>
     <section className="bg-primary text-primary-foreground py-16">
       <div className="container mx-auto px-4">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl">
           <h1 className="text-4xl font-bold mb-4">Our Products</h1>
-          <p className="text-lg opacity-85 font-sans">
-            Comprehensive range of copper and aluminium products for industrial recycling and manufacturing.
-          </p>
+          <p className="text-lg opacity-85 font-sans">Comprehensive range of non ferrous scrap products for industrial recycling and manufacturing.
+
+        </p>
         </motion.div>
       </div>
     </section>
@@ -95,22 +95,22 @@ const Products = () => (
 
         <TabsContent value="copper">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {copperProducts.map((p, i) => (
-              <ProductCard key={p.name} {...p} i={i} />
-            ))}
+            {copperProducts.map((p, i) =>
+          <ProductCard key={p.name} {...p} i={i} />
+          )}
           </div>
         </TabsContent>
 
         <TabsContent value="aluminium">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {alumProducts.map((p, i) => (
-              <ProductCard key={p.name} {...p} i={i} />
-            ))}
+            {alumProducts.map((p, i) =>
+          <ProductCard key={p.name} {...p} i={i} />
+          )}
           </div>
         </TabsContent>
       </Tabs>
     </section>
-  </Layout>
-);
+  </Layout>;
+
 
 export default Products;
