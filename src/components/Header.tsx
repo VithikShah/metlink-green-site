@@ -23,7 +23,7 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Shubham Metlink" className="h-10 w-auto" />
           <span className="font-display text-lg font-bold text-accent bg-gradient-to-r from-accent to-[hsl(30,40%,55%)] bg-clip-text text-transparent">
-            Shubham Metlink
+            SHUBHAM METLINK
           </span>
         </Link>
 
