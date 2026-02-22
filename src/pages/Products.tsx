@@ -89,8 +89,8 @@ const Products = () =>
     <section className="container mx-auto px-4 py-16">
       <Tabs defaultValue="copper" className="w-full">
         <TabsList className="mb-8 w-full justify-start">
-          <TabsTrigger value="copper">Copper Products</TabsTrigger>
-          <TabsTrigger value="aluminium">Aluminium Products</TabsTrigger>
+          <TabsTrigger value="copper">Copper Scrap</TabsTrigger>
+          <TabsTrigger value="aluminium">Aluminium Scrap</TabsTrigger>
         </TabsList>
 
         <TabsContent value="copper">
