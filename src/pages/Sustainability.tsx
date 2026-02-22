@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Recycle, Leaf, Factory, Award, ArrowDown } from "lucide-react";
 import isoLogo from "@/assets/iso-logo.webp";
+import cpcbLogo from "@/assets/cpcb-logo.png";
 
 const impactStats = [
   { value: "10,000 MT", label: "Copper Recycled Annually" },
@@ -99,7 +100,7 @@ const Sustainability = () => (
                 {isISO ? (
                   <img src={isoLogo} alt="ISO Certification" className="h-12 w-auto mx-auto mb-3" />
                 ) : (
-                  <Award className="h-8 w-8 text-accent mx-auto mb-3" />
+                  <img src={cpcbLogo} alt="CPCB Compliance" className="h-12 w-auto mx-auto mb-3" />
                 )}
                 <h3 className="font-semibold font-sans">{cert}</h3>
                 <p className="text-xs text-muted-foreground mt-1 font-sans">Certified & Compliant</p>
