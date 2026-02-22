@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const stats = [
   { value: "10,000 MT", label: "Annual Recycling Capacity" },
   { value: "100+", label: "Clients Served" },
-  { value: "15+", label: "Years of Experience" },
+  { value: "50+", label: "Years of Experience" },
   { value: "3", label: "Core Materials" },
 ];
 
