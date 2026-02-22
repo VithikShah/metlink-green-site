@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
-import { Recycle, Shield, TrendingUp, ArrowRight } from "lucide-react";
+import { Recycle, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import cu29Icon from "@/assets/cu29-icon.png";
+import al13Icon from "@/assets/al13-icon.png";
 
 const stats = [
   { value: "10,000 MT", label: "Annual Recycling Capacity" },
@@ -14,12 +16,12 @@ const stats = [
 
 const highlights = [
   {
-    icon: TrendingUp,
+    image: cu29Icon,
     title: "Copper Scrap",
     desc: "Copper pipes, berry, birch, and cupro-nickel scrap — sourced and processed to the highest standards.",
   },
   {
-    icon: Shield,
+    image: al13Icon,
     title: "Aluminium Scrap",
     desc: "Aluminium 6063, taint tabor, and sheet scrap for diverse industrial recycling applications.",
   },
@@ -115,7 +117,11 @@ const Index = () => (
             <Card className="h-full hover:shadow-lg transition-shadow">
               <CardContent className="p-6 flex flex-col items-start gap-4">
                 <div className="p-3 rounded-lg bg-accent/10">
-                  <s.icon className="h-6 w-6 text-accent" />
+                  {s.image ? (
+                    <img src={s.image} alt={s.title} className="h-10 w-10 rounded object-cover" />
+                  ) : s.icon ? (
+                    <s.icon className="h-6 w-6 text-accent" />
+                  ) : null}
                 </div>
                 <h3 className="text-xl font-semibold font-display">{s.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed font-sans">{s.desc}</p>
