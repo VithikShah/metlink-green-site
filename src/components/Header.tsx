@@ -9,7 +9,7 @@ const navLinks = [
   { to: "/about", label: "About" },
   { to: "/products", label: "Products" },
   { to: "/sustainability", label: "Sustainability" },
-  { to: "/gallery", label: "Gallery" },
+  // { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
 ];
 

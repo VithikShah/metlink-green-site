@@ -23,7 +23,7 @@ const Footer = () =>
           { to: "/about", label: "About Us" },
           { to: "/products", label: "Products" },
           { to: "/sustainability", label: "Sustainability" },
-          { to: "/gallery", label: "Gallery" },
+          // { to: "/gallery", label: "Gallery" },
           { to: "/contact", label: "Contact" }].
           map((l) =>
           <li key={l.to}>
