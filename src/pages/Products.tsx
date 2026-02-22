@@ -19,7 +19,7 @@ const copperProducts = [
   img: copperPipesImg
 },
 {
-  name: "Milberry Copper (No. 1 Bright)",
+  name: "Berry Copper (No. 1 Bright)",
   desc: "Premium grade bare, bright, uncoated copper wire scrap — 99.9% pure. Ideal for direct melting and re-processing into high-grade copper products.",
   img: milberryImg
 },
