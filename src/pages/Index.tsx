@@ -16,7 +16,7 @@ const highlights = [
   {
     icon: TrendingUp,
     title: "Copper Scrap",
-    desc: "Copper pipes, milberry, birch, and cupro-nickel scrap — sourced and processed to the highest standards.",
+    desc: "Copper pipes, berry, birch, and cupro-nickel scrap — sourced and processed to the highest standards.",
   },
   {
     icon: Shield,
