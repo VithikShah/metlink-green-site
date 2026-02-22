@@ -153,8 +153,17 @@ const Contact = () => {
             {/* Map placeholder */}
             <Card>
               <CardContent className="p-0">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm font-sans">Map Placeholder</span>
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1!2d80.1610713!3d13.0973228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52633b258be617%3A0xac5e6008acb641b9!2sSHUBHAM%20METLINK%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1700000000000"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Shubham Metlink Location"
+                  />
                 </div>
               </CardContent>
             </Card>
