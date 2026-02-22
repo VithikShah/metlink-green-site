@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Recycle, Leaf, Factory, Award, ArrowDown } from "lucide-react";
+import isoLogo from "@/assets/iso-logo.webp";
 
 const impactStats = [
   { value: "10,000 MT", label: "Copper Recycled Annually" },
@@ -90,15 +91,22 @@ const Sustainability = () => (
     <section className="container mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-8">Certifications & Standards</h2>
       <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-        {["ISO 9001:2015", "ISO 14001:2015", "CPCB Compliance"].map((cert) => (
-          <Card key={cert} className="text-center">
-            <CardContent className="p-6">
-              <Award className="h-8 w-8 text-accent mx-auto mb-3" />
-              <h3 className="font-semibold font-sans">{cert}</h3>
-              <p className="text-xs text-muted-foreground mt-1 font-sans">Certified & Compliant</p>
-            </CardContent>
-          </Card>
-        ))}
+        {["ISO 9001:2015", "ISO 14001:2015", "CPCB Compliance"].map((cert) => {
+          const isISO = cert.startsWith("ISO");
+          return (
+            <Card key={cert} className="text-center">
+              <CardContent className="p-6">
+                {isISO ? (
+                  <img src={isoLogo} alt="ISO Certification" className="h-12 w-auto mx-auto mb-3" />
+                ) : (
+                  <Award className="h-8 w-8 text-accent mx-auto mb-3" />
+                )}
+                <h3 className="font-semibold font-sans">{cert}</h3>
+                <p className="text-xs text-muted-foreground mt-1 font-sans">Certified & Compliant</p>
+              </CardContent>
+            </Card>
+          );
+        })}
       </div>
     </section>
   </Layout>
