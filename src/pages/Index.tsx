@@ -15,12 +15,12 @@ const stats = [
 const highlights = [
   {
     icon: TrendingUp,
-    title: "Copper Products",
+    title: "Copper Scrap",
     desc: "Copper pipes, milberry, birch, and cupro-nickel scrap — sourced and processed to the highest standards.",
   },
   {
     icon: Shield,
-    title: "Aluminium Products",
+    title: "Aluminium Scrap",
     desc: "Aluminium 6063, taint tabor, and sheet scrap for diverse industrial recycling applications.",
   },
   {
@@ -54,18 +54,19 @@ const Index = () => (
           <p className="text-primary-foreground font-semibold text-sm uppercase tracking-wider mb-3 font-sans">
             Trusted Metal Partner
           </p>
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
-            Importing Metals. Recycling Futures.
-          </h1>
+          <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">Importing Metals. Recycling Futures.</h1>
           <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed font-sans">
-            Shubham Metlink is a leading importer of copper and aluminium, with a 10,000 MT annual copper scrap recycling capacity. We power industries while championing sustainability.
+            Shubham Metlink is a leading importer of copper and aluminium, with a 10,000 MT annual copper scrap
+            recycling capacity. We power industries while championing sustainability.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90">
               <Link to="/contact">Get a Quote</Link>
             </Button>
             <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              <Link to="/products">Our Products <ArrowRight className="ml-1 h-4 w-4" /></Link>
+              <Link to="/products">
+                Our Products <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
             </Button>
           </div>
         </motion.div>
@@ -135,10 +136,13 @@ const Index = () => (
           <div className="flex-1">
             <h2 className="text-3xl font-bold mb-4">Committed to a Greener Tomorrow</h2>
             <p className="text-foreground/70 leading-relaxed font-sans mb-6">
-              With our 10,000 MT copper scrap recycling facility, we're reducing waste and contributing to a circular economy. Sustainability isn't just a value — it's our business model.
+              With our 10,000 MT copper scrap recycling facility, we're reducing waste and contributing to a circular
+              economy. Sustainability isn't just a value — it's our business model.
             </p>
             <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/sustainability">Explore Sustainability <ArrowRight className="ml-1 h-4 w-4" /></Link>
+              <Link to="/sustainability">
+                Explore Sustainability <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
             </Button>
           </div>
           <div className="flex-1 flex justify-center">
