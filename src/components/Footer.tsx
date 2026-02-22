@@ -8,7 +8,7 @@ const Footer = () =>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div className="md:col-span-1">
-          <img src={logo} alt="Shubham Metlink" className="h-12 w-auto mb-2 brightness-0 invert" />
+          <img src={logo} alt="Shubham Metlink" className="h-12 w-auto mb-2" />
           <h3 className="font-display text-xl font-bold mb-3">Shubham Metlink</h3>
           <p className="text-sm opacity-80 leading-relaxed">Leading importer of copper & aluminium scrap with 10,000 MT annual recycling capacity. Committed to sustainability and quality.
 
