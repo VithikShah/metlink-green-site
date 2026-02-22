@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/shubham-metlink-logo.png";
 
-const Footer = () => (
-  <footer className="bg-primary text-primary-foreground">
+const Footer = () =>
+<footer className="bg-primary text-primary-foreground">
     <div className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div className="md:col-span-1">
           <img src={logo} alt="Shubham Metlink" className="h-12 w-auto mb-2 brightness-0 invert" />
           <h3 className="font-display text-xl font-bold mb-3">Shubham Metlink</h3>
-          <p className="text-sm opacity-80 leading-relaxed">
-            Leading importer of copper & aluminium with 10,000 MT annual recycling capacity. Committed to sustainability and quality.
-          </p>
+          <p className="text-sm opacity-80 leading-relaxed">Leading importer of copper & aluminium scrap with 10,000 MT annual recycling capacity. Committed to sustainability and quality.
+
+        </p>
         </div>
 
         {/* Quick Links */}
@@ -20,18 +20,18 @@ const Footer = () => (
           <h4 className="font-semibold text-sm uppercase tracking-wider mb-3 opacity-70 font-sans">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             {[
-              { to: "/about", label: "About Us" },
-              { to: "/products", label: "Products" },
-              { to: "/sustainability", label: "Sustainability" },
-              { to: "/gallery", label: "Gallery" },
-              { to: "/contact", label: "Contact" },
-            ].map((l) => (
-              <li key={l.to}>
+          { to: "/about", label: "About Us" },
+          { to: "/products", label: "Products" },
+          { to: "/sustainability", label: "Sustainability" },
+          { to: "/gallery", label: "Gallery" },
+          { to: "/contact", label: "Contact" }].
+          map((l) =>
+          <li key={l.to}>
                 <Link to={l.to} className="opacity-80 hover:opacity-100 transition-opacity">
                   {l.label}
                 </Link>
               </li>
-            ))}
+          )}
           </ul>
         </div>
 
@@ -71,7 +71,7 @@ const Footer = () => (
         © {new Date().getFullYear()} Shubham Metlink. All rights reserved.
       </div>
     </div>
-  </footer>
-);
+  </footer>;
+
 
 export default Footer;
