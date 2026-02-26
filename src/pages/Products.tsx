@@ -8,6 +8,7 @@ import copperPipesImg from "@/assets/copper-pipes.jpg";
 import milberryImg from "@/assets/milberry-copper.jpg";
 import birchImg from "@/assets/birch-copper.jpg";
 import cuproNickelImg from "@/assets/cupro-nickel.jpg";
+import druidImg from "@/assets/druid-copper.jpg";
 import aluminium6063Img from "@/assets/aluminium-6063.jpg";
 import aluminiumTTImg from "@/assets/aluminium-tt.jpg";
 import aluminiumSheetsImg from "@/assets/aluminium-sheets.jpg";
@@ -32,6 +33,11 @@ const copperProducts = [
     name: "Cupro-Nickel Scrap",
     desc: "Copper-nickel alloy scrap recovered from marine, desalination, and heat exchanger applications. Processed for maximum copper and nickel recovery.",
     img: cuproNickelImg,
+  },
+  {
+    name: "Druid",
+    desc: "Druid Insulated Copper Wire Scrap shall consist of No.1 bare, uncoated, unalloyed copper wire (Barley), not smaller than No. 16 B & S wire gauge (unless smaller wire gauge is mutually agreed upon), with various types of insulation.",
+    img: druidImg,
   },
 ];
 
