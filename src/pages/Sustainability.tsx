@@ -57,13 +57,15 @@ const Sustainability = () =>
     {/* PrithviCo Section */}
     <section className="container mx-auto px-4 py-16 max-w-3xl">
       <div className="flex items-center gap-4 mb-6">
-        <img src={prithvicoLogo} alt="PrithviCo Logo" className="h-14 w-auto rounded-lg" />
+        <a href="https://www.prithvico.in/" target="_blank" rel="noopener noreferrer">
+          <img src={prithvicoLogo} alt="PrithviCo Logo" className="h-14 w-auto rounded-lg" />
+        </a>
         <img src={shubhamIcon} alt="Shubham Metlink" className="h-14 w-auto" />
       </div>
       <h2 className="text-2xl md:text-3xl font-bold mb-4 font-display whitespace-nowrap">PrithviCo &mdash; Shubham Metlink&apos;s Decarbonization Vertical</h2>
       <div className="text-muted-foreground font-sans leading-relaxed space-y-4">
         <p>Fifty years in the metals business teaches you to spot where things are heading. And it's clear that how industries source their raw materials is changing fast.</p>
-        <p className="font-semibold text-foreground">PrithviCo is our response to that shift.</p>
+        <p className="font-semibold text-foreground"><a href="https://www.prithvico.in/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">PrithviCo</a> is our response to that shift.</p>
         <p>Led by Kunal Jain, PrithviCo is Shubham Metlink's dedicated vertical for sustainable copper sourcing. It helps Indian corporates procure copper scrap — both imported and locally available — as a cleaner, more responsible alternative to virgin metal.</p>
         <p>For businesses with ESG commitments or those simply looking to reduce costs through scrap, PrithviCo makes the transition straightforward. And with Shubham Metlink's supply chain and relationships behind it, you're not starting from scratch with a new supplier. You're working with a name that's been in this industry for over five decades.</p>
         <p>
