@@ -60,8 +60,8 @@ const Sustainability = () => (
         <img src={prithvicoLogo} alt="PrithviCo Logo" className="h-14 w-auto rounded-lg" />
         <img src={shubhamIcon} alt="Shubham Metlink" className="h-14 w-auto" />
       </div>
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 font-display text-center whitespace-nowrap">PrithviCo — Shubham Metlink's Decarbonization Vertical</h2>
-      <div className="text-muted-foreground font-sans leading-relaxed space-y-4 text-justify">
+      <h2 className="text-3xl font-bold mb-4 font-display text-center">PrithviCo — Shubham Metlink's Decarbonization Vertical</h2>
+      <div className="text-muted-foreground font-sans leading-relaxed space-y-4">
         <p>Fifty years in the metals business teaches you to spot where things are heading. And it's clear that how industries source their raw materials is changing fast.</p>
         <p className="font-semibold text-foreground">PrithviCo is our response to that shift.</p>
         <p>Led by Kunal Jain, PrithviCo is Shubham Metlink's dedicated vertical for sustainable copper sourcing. It helps Indian corporates procure copper scrap — both imported and locally available — as a cleaner, more responsible alternative to virgin metal.</p>
