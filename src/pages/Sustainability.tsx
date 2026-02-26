@@ -58,9 +58,9 @@ const Sustainability = () =>
     <section className="container mx-auto px-4 py-16 max-w-3xl">
       <div className="flex items-center gap-4 mb-6">
         <a href="https://www.prithvico.in/" target="_blank" rel="noopener noreferrer">
-          <img src={prithvicoLogo} alt="PrithviCo Logo" className="h-14 w-auto rounded-lg" />
+          <img src={prithvicoLogo} alt="PrithviCo Logo" className="h-12 w-auto rounded-lg" />
         </a>
-        <img src={shubhamIcon} alt="Shubham Metlink" className="h-14 w-auto" />
+        <img src={shubhamIcon} alt="Shubham Metlink" className="h-12 w-auto" />
       </div>
       <h2 className="text-2xl md:text-3xl font-bold mb-4 font-display whitespace-nowrap">PRITHVICO : SHUBHAM METLINK'S DECARBONIZATION VERTICAL</h2>
       <div className="text-muted-foreground font-sans leading-relaxed space-y-4">
