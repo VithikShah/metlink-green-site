@@ -8,7 +8,7 @@ const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/products", label: "Products" },
-  { to: "/sustainability", label: "Sustainability" },
+  { to: "/prithvico", label: "Sustainability" },
   // { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
 ];
