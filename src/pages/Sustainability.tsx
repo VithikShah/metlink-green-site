@@ -1,9 +1,12 @@
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Recycle, Leaf, Factory, Award, ArrowDown } from "lucide-react";
+import { Recycle, Leaf, Factory, Award, ArrowDown, Linkedin, Mail } from "lucide-react";
 import isoLogo from "@/assets/iso-logo.webp";
 import cpcbLogo from "@/assets/cpcb-logo.png";
+import prithvicoLogo from "@/assets/prithvico-logo.png";
+import shubhamIcon from "@/assets/shubham-icon.png";
+import prithvicoIllustration from "@/assets/prithvico-illustration.jpg";
 
 const impactStats = [
   { value: "10,000 MT", label: "Copper Recycled Annually" },
@@ -51,15 +54,41 @@ const Sustainability = () => (
       </div>
     </section>
 
-    {/* Mission */}
-    <section className="container mx-auto px-4 py-16 max-w-3xl">
-      <h2 className="text-3xl font-bold mb-4">Our Recycling Mission</h2>
-      <p className="text-muted-foreground font-sans leading-relaxed mb-4">
-        At Shubham Metlink, we believe that every kilogram of copper recovered from scrap is a kilogram that doesn't need to be mined. Our 10,000 MT annual recycling capacity is a testament to our commitment to reducing the environmental footprint of the metals industry.
-      </p>
-      <p className="text-muted-foreground font-sans leading-relaxed">
-        By investing in modern recycling technology and responsible sourcing practices, we're helping build a circular economy where valuable materials are reused, waste is minimized, and industries thrive sustainably.
-      </p>
+    {/* PrithviCo Section */}
+    <section className="container mx-auto px-4 py-16 max-w-4xl">
+      <div className="flex flex-col lg:flex-row gap-10 items-start">
+        <div className="flex-1">
+          <div className="flex items-center gap-4 mb-6">
+            <img src={prithvicoLogo} alt="PrithviCo Logo" className="h-14 w-auto rounded-lg" />
+            <img src={shubhamIcon} alt="Shubham Metlink" className="h-14 w-auto" />
+          </div>
+          <h2 className="text-3xl font-bold mb-4 font-display">PrithviCo — Shubham Metlink's Decarbonization Vertical</h2>
+          <div className="text-muted-foreground font-sans leading-relaxed space-y-4">
+            <p>Fifty years in the metals business teaches you to spot where things are heading. And it's clear that how industries source their raw materials is changing fast.</p>
+            <p className="font-semibold text-foreground">PrithviCo is our response to that shift.</p>
+            <p>Led by Kunal Jain, PrithviCo is Shubham Metlink's dedicated vertical for sustainable copper sourcing. It helps Indian corporates procure copper scrap — both imported and locally available — as a cleaner, more responsible alternative to virgin metal.</p>
+            <p>For businesses with ESG commitments or those simply looking to reduce costs through scrap, PrithviCo makes the transition straightforward. And with Shubham Metlink's supply chain and relationships behind it, you're not starting from scratch with a new supplier. You're working with a name that's been in this industry for over five decades.</p>
+            <p>
+              Reach out to Kunal Jain at{" "}
+              <a href="mailto:kunal@prithvico.in" className="text-accent font-medium hover:underline inline-flex items-center gap-1">
+                <Mail className="h-4 w-4" /> kunal@prithvico.in
+              </a>{" "}
+              to explore what this looks like for your business.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/kunal1997/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-accent hover:underline font-medium mt-2"
+            >
+              <Linkedin className="h-5 w-5" /> Connect with Kunal on LinkedIn
+            </a>
+          </div>
+        </div>
+        <div className="lg:w-80 w-full flex-shrink-0">
+          <img src={prithvicoIllustration} alt="PrithviCo sustainability illustration" className="rounded-xl shadow-md w-full" />
+        </div>
+      </div>
     </section>
 
     {/* Process */}
