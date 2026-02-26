@@ -62,7 +62,7 @@ const Sustainability = () =>
         </a>
         <img src={shubhamIcon} alt="Shubham Metlink" className="h-14 w-auto" />
       </div>
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 font-display whitespace-nowrap">PrithviCo &mdash; Shubham Metlink&apos;s Decarbonization Vertical</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 font-display whitespace-nowrap">PRITHVICO : SHUBHAM METLINK'S DECARBONIZATION VERTICAL</h2>
       <div className="text-muted-foreground font-sans leading-relaxed space-y-4">
         <p>Fifty years in the metals business teaches you to spot where things are heading. And it's clear that how industries source their raw materials is changing fast.</p>
         <p className="font-semibold text-foreground"><a href="https://www.prithvico.in/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">PrithviCo</a> is our response to that shift.</p>
