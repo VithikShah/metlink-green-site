@@ -129,7 +129,7 @@ const Contact = () => {
                   <Phone className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                   <div>
                     <p className="font-medium text-sm font-sans">Phone</p>
-                    <p className="text-sm text-muted-foreground font-sans">+91 98402 58400</p>
+                    <p className="text-sm text-muted-foreground font-sans">+91 63823 89585</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
