@@ -102,7 +102,7 @@ const About = () => (
         <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
         <ul className="space-y-4 font-sans">
           {[
-            "10,000 MT annual copper scrap recycling capacity",
+            "3500 MT annual copper scrap recycling capacity",
             "Direct sourcing from certified global suppliers",
             "Rigorous quality control and testing at every stage",
             "Flexible order quantities to match your needs",
