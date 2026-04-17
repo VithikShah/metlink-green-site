@@ -8,7 +8,7 @@ import cu29Icon from "@/assets/cu29-icon.png";
 import al13Icon from "@/assets/al13-icon.png";
 
 const stats = [
-  { value: "10,000 MT", label: "Annual Recycling Capacity" },
+  { value: "3500 MT", label: "Annual Recycling Capacity" },
   { value: "100+", label: "Clients Served" },
   { value: "50+", label: "Years of Experience" },
   { value: "3", label: "Core Materials" },
@@ -28,7 +28,7 @@ const highlights = [
   {
     icon: Recycle,
     title: "Recycling Facility",
-    desc: "State-of-the-art recycling facility with 10,000 MT annual capacity, turning scrap into premium material.",
+    desc: "State-of-the-art recycling facility with 3500 MT annual capacity, turning scrap into premium material.",
   },
 ];
 
@@ -58,7 +58,7 @@ const Index = () => (
           </p>
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">Importing Metals. Recycling Futures.</h1>
           <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed font-sans">
-            Shubham Metlink is a leading importer of copper and aluminium, with a 10,000 MT annual copper scrap
+            Shubham Metlink is a leading importer of copper and aluminium, with a 3500 MT annual copper scrap
             recycling capacity. We power industries while championing sustainability.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -142,7 +142,7 @@ const Index = () => (
           <div className="flex-1">
             <h2 className="text-3xl font-bold mb-4">Committed to a Greener Tomorrow</h2>
             <p className="text-foreground/70 leading-relaxed font-sans mb-6">
-              With our 10,000 MT copper scrap recycling facility, we're reducing waste and contributing to a circular
+              With our 3500 MT copper scrap recycling facility, we're reducing waste and contributing to a circular
               economy. Sustainability isn't just a value — it's our business model.
             </p>
             <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">

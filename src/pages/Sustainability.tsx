@@ -9,7 +9,7 @@ import shubhamIcon from "@/assets/shubham-icon.png";
 
 
 const impactStats = [
-{ value: "10,000 MT", label: "Copper Recycled Annually" },
+{ value: "3500 MT", label: "Copper Recycled Annually" },
 { value: "30,000+", label: "Tons CO₂ Offset" },
 { value: "~95%", label: "Material Recovery Rate" },
 { value: "Zero", label: "Waste to Landfill Goal" }];
