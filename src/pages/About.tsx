@@ -56,7 +56,7 @@ const About = () => (
           </p>
           <p>
             Over the years, we've built strong relationships with global suppliers and developed a state-of-the-art
-            recycling facility with an annual capacity of 10,000 metric tons. Our integrated approach — combining import
+            recycling facility with an annual capacity of 3500 metric tons. Our integrated approach — combining import
             expertise with recycling capabilities — allows us to serve diverse industrial needs efficiently.
           </p>
           <p>
